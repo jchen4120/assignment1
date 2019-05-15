@@ -1,0 +1,177 @@
+body {
+  background-image: url("file:///C:/Users/Jennifer%20Chen/Documents/CPSC436I/assignment1/background.jpg");
+  background-size: cover;
+}
+.fade-in {
+  animation-duration: 2s;
+  animation-name: fadein;
+}
+
+.bounce {
+  animation-duration: 1s;
+  animation-name: bounce;
+  animation-iteration-count: 2;
+}
+
+.title {
+  font-size: xx-large;
+  font-family: cursive;
+  font-weight: bolder;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: whitesmoke;
+  padding-bottom: 10px;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  background: whitesmoke;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.tab-button {
+  display: flex;
+  flex-grow: 0;
+  background-color: whitesmoke;
+  border: whitesmoke;
+  height: 100%;
+  min-height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: medium;
+  color: slategrey;
+  cursor: pointer;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  height: 100%;
+  align-items: center;
+}
+
+.add-message {
+  display: flex;
+}
+
+.input-label {
+  font-size: large;
+  font-family: cursive;
+  font-weight: bold;
+  color: whitesmoke;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+}
+
+.input-box {
+  border: none;
+}
+
+.clear-message-button {
+  font-family: cursive;
+  font-weight: bold;
+  color: slategrey;
+  font-size: medium;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+
+.default-button {
+  display: flex;
+  font-size: medium;
+  font-family: cursive;
+  font-weight: bold;
+  color: slategray;
+  background-color: whitesmoke;
+  border: slategray;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+#message-form {
+  display: flex;
+  padding-right: 10px;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  width: 50%;
+  align-items: center;
+}
+
+.single-message {
+  font-size: medium;
+  font-family: cursive;
+  font-weight: bold;
+  color: slategray;
+  padding: 10px;
+  overflow-wrap: break-word;
+}
+
+.remove-list-item-button {
+  background: transparent;
+  border: slategray;
+  font-size: small;
+  font-family: cursive;
+  font-weight: bold;
+  color: slategray;
+  border-style: double;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#list-of-messages {
+  background-color: whitesmoke;
+  width: 100%;
+  min-width: 100%;
+}
+
+.about-section {
+  background-color: whitesmoke;
+  font-size: medium;
+  font-family: cursive;
+  font-weight: bold;
+  color: slategray;
+  overflow-wrap: break-word;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.about-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform:translateY(0px);
+  }
+
+  50% {
+    transform:translateY(5px);
+  }
+
+  100% {
+    transform:translateY(0px);
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/Jennifer%20Chen/Documents/CPSC436I/assignment1/assignment1.css"/>
+    <script type="text/javascript" src="file:///C:/Users/Jennifer%20Chen/Documents/CPSC436I/assignment1/assignment1.js"></script>
+  </head>
+  <body onload="addInitialMessages()">
+    <div class="title">Jennifer's Assignment 1</div>
+    <div id="nav-bar">
+      <button class="tab-button" onclick="location.href='file:///C:/Users/Jennifer%20Chen/Documents/CPSC436I/assignment1/assignment1.html'">Home</button>
+      <button class="tab-button" onclick="location.href='file:///C:/Users/Jennifer%20Chen/Documents/CPSC436I/assignment1/assignment1About.html'">About</button>
+    </div>
+    <div class="message-container">
+      <div class="add-message">
+        <label class="input-label">Add Message: </label>
+        <form id="message-form">
+          <input class="input-box" id="message-input" type=text/>
+          <button class="clear-message-button" type="reset">X</button>
+        </form>
+        <button class="default-button" onclick="addMessage()">Submit</button>
+      </div>
+      <div class="message-list">
+        <label class="input-label">Messages</label>
+        <ul id="list-of-messages"></ul>
+        <button class="default-button" onclick="clearMessages()">Clear Message List</button>
+      </div>
+    </div>
+  </body>
+</html>
